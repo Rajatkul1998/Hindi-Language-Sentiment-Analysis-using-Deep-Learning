@@ -31,4 +31,4 @@ class LSTM_NN(nn.Module):
         out_l1 = self.l1(out)
         sig_out = self.prob(out_l1)        
         
-        return sig_out, hidden              
+        return sig_out, hidden
