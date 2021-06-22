@@ -20,7 +20,7 @@ model.load_state_dict(checkpoint['model_state_dict'])
 def tokenize_review(test_senti):
     test_words = test_senti.split()
     test_ints = []
-    test_ints.append([vocab_to_int[word] if word in vocab_to_int else 0 for word in test_words])
+    test_ints.append([vocab_to_int[word] if word in vocab_to_int else -1 for word in test_words])
 
     return test_ints
 
