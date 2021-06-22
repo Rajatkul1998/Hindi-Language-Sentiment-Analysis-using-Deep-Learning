@@ -1,5 +1,6 @@
 import streamlit as st 
 import CONFIG 
+import pickle
 import torch
 from pad_sequence import pad_features
 from build_vocab import vocab_to_int
